@@ -1,0 +1,16 @@
+{
+	"appName": "Necro",
+	"description": "An app for managing necrosis stacks",
+	"appUrl": "./index.html",
+	"configUrl": "./appconfig.json",
+	"iconUrl": "./icon.png",
+	"defaultWidth": 100,
+	"defaultHeight": 50,
+	"minWidth": 100,
+	"minHeight": 50,
+	"maxWidth": 1000,
+	"maxHeight": 1000,
+	"requestHandlers": [ ],
+	"activators": [	],
+	"permissions": "pixel,overlay"
+}
