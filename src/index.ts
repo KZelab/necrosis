@@ -79,10 +79,12 @@ if (window.alt1) {
 		findNecrosisStacks(img)
 		findSoulStacks(img)
 	}, 100);	
+	
 
 		//also the worst possible example of how to use global exposed exports as described in webpack.config.js
-	output.insertAdjacentHTML("beforeend", `
-	<button onclick='TestApp.toggleNecrosisAlertOn()'>Click to toggle on the necrosis stack tracker</button>`
+	output.insertAdjacentHTML("beforeend", 
+	'<div>This is WIP and can be minimised</div>'
+	//`<button onclick='TestApp.toggleNecrosisAlertOn()'>Click to toggle on the necrosis stack tracker</button>`
 	);
 
 } else {
