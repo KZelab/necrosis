@@ -80,6 +80,11 @@ if (window.alt1) {
 		findSoulStacks(img)
 	}, 100);	
 
+		//also the worst possible example of how to use global exposed exports as described in webpack.config.js
+	output.insertAdjacentHTML("beforeend", `
+	<button onclick='TestApp.toggleNecrosisAlertOn()'>Click to toggle on the necrosis stack tracker</button>`
+	);
+
 } else {
 	let addappurl = `alt1://addapp/${new URL("./appconfig.json", document.location.href).href}`;
 	output.insertAdjacentHTML("beforeend", `
@@ -87,7 +92,3 @@ if (window.alt1) {
 	`);
 }
 
-//also the worst possible example of how to use global exposed exports as described in webpack.config.js
-output.insertAdjacentHTML("beforeend", `
-	<button onclick='TestApp.toggleNecrosisAlertOn()'>Click to toggle on the necrosis stack tracker</button>`
-);
